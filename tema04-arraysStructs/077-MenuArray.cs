@@ -21,14 +21,13 @@ class Ejercicio77
     static void Main()
     {
         int seleccion;
-        int[] numeros = { 0, 1, 2, 3 };
         string[] opciones = { "Salir", "jugar nueva partida", "Cargar partida", 
             "Ver mejores puntuaciones"};
 
         Console.WriteLine("Escoja una de las opciones");
         for (int i = 0; i < opciones.Length; i++)
         {
-            Console.WriteLine("{0}. {1}", numeros[i], opciones[i]);
+            Console.WriteLine("{0}. {1}", i, opciones[i]);
         }
 
         seleccion = Convert.ToInt32(Console.ReadLine());
