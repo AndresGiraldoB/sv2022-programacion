@@ -1,4 +1,5 @@
-/* Datos de hasta 100 personas. 
+/*
+Datos de hasta 100 personas. 
 Nombre y email para cada una.
 Menú que permita:
 - Añadir un nuevo dato
@@ -39,7 +40,7 @@ class ArrayStruct1
                 case AGREGAR:
                     if (cantidad < CAPACIDAD)
                     {
-                        Console.Write("Dime el nombre de la nueva persona: ");
+                        Console.Write("Dime el nombre: ");
                         personas[cantidad].nombre = Console.ReadLine();
 
                         Console.Write("Dime su correo: ");
@@ -54,16 +55,16 @@ class ArrayStruct1
                     break;
 
                 case VER:
-                    if (cantidad == 0)
+                    if (cantidad <= 0)
                     {
                         Console.WriteLine("No hay ningún dato");
                     }
-                    if (cantidad > 0)
+                    else
                     {
                         for (int i = 0; i < cantidad; i++)
                         {
-                            Console.WriteLine(personas[i].nombre);
-                            Console.WriteLine(personas[i].email);
+                            Console.WriteLine("Nombre: " + personas[i].nombre);
+                            Console.WriteLine("Correo: " + personas[i].email);
                             Console.WriteLine();
                         }
                     }
