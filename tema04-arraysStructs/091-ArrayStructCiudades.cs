@@ -304,7 +304,7 @@ class Ejercicio91
                     }
                     else
                     {
-                        for (int i = cantidad; i < posicionInsertar; i++)
+                        for (int i = cantidad; i > posicionInsertar; i--)
                         {
                             ciudades[i] = ciudades[i - 1];
                         }
@@ -314,7 +314,6 @@ class Ejercicio91
                         {
                             Console.WriteLine("Nombre: ");
                             ciudades[posicionInsertar].nombre = Console.ReadLine();
-
                         }
                         while (ciudades[posicionInsertar].nombre == "");
 
@@ -326,7 +325,7 @@ class Ejercicio91
                         while (ciudades[posicionInsertar].pais == "");
 
                         Console.WriteLine("Población: ");
-                        string leer1 = (Console.ReadLine());
+                        string leer1 = Console.ReadLine();
                         if (leer1 == "")
                         {
                             ciudades[posicionInsertar].poblacion = 0;
