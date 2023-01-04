@@ -72,8 +72,8 @@ class Reto01
             }
             else
             {
-                Console.WriteLine(palabra[0] + "" + 
-                    (anchoPalabra-2) + "" + palabra[anchoPalabra - 1]);
+                Console.WriteLine(palabra[0] + 
+                    (anchoPalabra-2) + palabra[anchoPalabra - 1]);
             }
         }
     }
