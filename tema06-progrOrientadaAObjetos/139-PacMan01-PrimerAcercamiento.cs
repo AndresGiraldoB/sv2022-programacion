@@ -63,11 +63,11 @@ class SpriteModoTexto
 
     public SpriteModoTexto() { }
 
-    public SpriteModoTexto(byte x, byte y, char caracter)
+    public SpriteModoTexto(byte nuevaX, byte nuevaY, char nuevoCaracter)
     {
-        this.x = x;
-        this.y = y;
-        this.caracter = caracter;
+        x = nuevaX;
+        y = nuevaY;
+        caracter = nuevoCaracter;
     }
 
 
@@ -75,20 +75,20 @@ class SpriteModoTexto
 
 class Fantasma : SpriteModoTexto
 {
-    public Fantasma(byte x, byte y)
+    public Fantasma(byte nuevaX, byte nuevaY)
     {
-        this.x = x;
-        this.y = y;
+        x = nuevaX;
+        y = nuevaY;
         caracter = 'A';
     }
 }
 
 class Pac : SpriteModoTexto
 {
-    public Pac(byte x, byte y)
+    public Pac(byte nuevaX, byte nuevaY)
     {
-        this.x = x;
-        this.y = y;
+        x = nuevaX;
+        y = nuevaY;
         caracter = 'C';
     }
 }
