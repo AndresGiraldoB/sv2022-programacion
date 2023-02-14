@@ -25,34 +25,32 @@ using System;
 
 class Vector3D
 {
-    private double x, y, z;
-
     public Vector3D(double x, double y, double z)
     {
-        this.x = x;
-        this.y = y;
-        this.z = z;
+        X = x;
+        Y = y;
+        Z = z;
     }
-
+    
     public double X { get; set; }
     public double Y { get; set; }
     public double Z { get; set; }
 
     public override string ToString()
     {
-        return "<" + x + ", " + y + ", " + z + ">";
+        return "<" + X + ", " + Y + ", " + X + ">";
     }
 
     public double GetLongitud()
     {
-        return Math.Sqrt(x*x + y*y + z*z);
+        return Math.Sqrt(X*X + Y*Y + Z*Z);
     }
 
     public void Sumar(Vector3D v)
     {
-        x += v.x;
-        y += v.y;
-        z += v.z;
+        X += v.X;
+        Y += v.Y;
+        Z += v.Z;
     }
 }
 
