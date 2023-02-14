@@ -77,8 +77,7 @@ y el tamaño de su memoria.
 
 using System;
 
-
-class Procesador
+abstract class Procesador
 {
     // --- Atributos ----------
     protected int numBits;
