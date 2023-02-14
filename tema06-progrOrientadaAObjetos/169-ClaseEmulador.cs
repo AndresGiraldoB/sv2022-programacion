@@ -235,8 +235,8 @@ class Ordenador
     public override string ToString()
     {
         return nombre + 
-            ", procesador " + procesador.ToString() + 
-            " " + memoria.ToString();
+            ", procesador " + procesador + 
+            " " + memoria;
     }
 }
 
